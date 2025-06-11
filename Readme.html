@@ -1,0 +1,94 @@
+what is flex box?
+ flexbox is a one dimanesion layout model that allows you to design a layout structure without using float or positioning. It is a powerful tool for creating responsive layouts and aligning items within a container.
+Flexbox stands for "Flexible Box Layout" and is a CSS layout mode that provides an efficient way to arrange items within a container, even when their size is unknown or dynamic. It allows for the distribution of space along a single axis (either horizontally or vertically) and provides control over alignment, direction, and order of the items.
+ it is ued space among items in a row horizontally or vertically. Flexbox is particularly useful for creating responsive designs, as it allows items to adjust their size and position based on the available space in the container.
+
+if we want to change direction to column  
+
+option for justify contain :box-sizing
+justify-content: flex-start; /* Default, items are packed toward the start of the flex container */
+justify-content: flex-end; /* Items are packed toward the end of the flex container */
+justify-content: center; /* Items are centered in the flex container */
+justify-content: space-between; /* Items are evenly distributed in the flex container, with the first item at the start and the last item at the end */
+justify-content: space-around; /* Items are evenly distributed in the flex container, with equal space around each item */
+justify-content: space-evenly; /* Items are evenly distributed in the flex container, with equal space between them */
+   
+
+
+ option for align items :box-sizing:
+align-items: flex-start; /* Items are aligned at the start of the cross axis */
+align-items: flex-end; /* Items are aligned at the end of the cross axis */
+align-items: center; /* Items are centered in the cross axis */
+align-items: baseline; /* Items are aligned along their baseline */
+
+.box{
+   flex 1;
+   margin :6px; /// all boxes grow equally to fill the available space.
+}
+
+
+
+  What is Grid Layout?: _
+
+
+  css Grid is a two dimanesion system means it can handle both rows and coloumns  at the same time 
+
+
+  when you use grid instead of flex  box ?
+
+use grid when :box-sizing
+
+you need rows and columns
+for example for page section ;
+  
+
+use flexbox when:box-sizing
+you need a single row or column layout;
+Example for nav bar or footer , tool bars ;
+
+ * what is the difference justify content and align items in flexbox?
+
+ justify contain :box-sizing
+  main axis alignment
+  
+Grid :box-sizing
+
+How do you define three equal width columns in a grid layout?
+
+To define three equal width columns in a grid layout, you can use the `grid-template-columns` property with the value `repeat(3, 1fr)`. This creates three columns, each taking up one fraction of the available space.
+
+Example:
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates three equal width columns */
+  gap: 10px; /* Optional: adds space between grid items */
+}
+
+
+How do you make a grid iteam span two columns?
+
+To make a grid item span two columns, you can use the `grid-column` property with the value `span 2`. This tells the grid item to occupy two columns in the grid layout.  
+
+
+Example:
+.grid-item {
+  grid-column: span 2; /* This item will span two columns */
+}
+
+ 
+
+repeat():
+
+grid grid-template-columns: repeat(3, 1fr); /* Creates three equal width columns */
+
+it creates three equal columns then 1fr means one fraction of available space .
+
+grid-template-rows: repeat(auto-fit, minmax (150px )); 
+
+it adjust the number of columns based on the screen width <div class="
+"></div>
+
+minmax():
+it saids min and max size  for each iteam;
+
+
